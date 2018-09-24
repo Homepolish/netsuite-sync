@@ -8,12 +8,14 @@
         <ns1:applicationInfo xmlns:ns1="urn:messages_2018_1.platform.webservices.netsuite.com">
             <applicationId>1B99D675-7E7A-4DA5-9610-04D229E10AB8</applicationId>
         </ns1:applicationInfo>
-        <ns1:passport soap:actor="http://schemas.xmlsoap.org/soap/actor/next" soap:mustUnderstand="0"
+        <ns1:tokenPassport soap:actor="http://schemas.xmlsoap.org/soap/actor/next" soap:mustUnderstand="0"
                       xmlns:ns1="urn:messages_2018_1.platform.webservices.netsuite.com">
-            <ns2:email xmlns:ns2="urn:core_2018_1.platform.webservices.netsuite.com"><%=email%></ns2:email>
-            <ns3:password xmlns:ns3="urn:core_2018_1.platform.webservices.netsuite.com"><%=password%></ns3:password>
-            <ns4:account xmlns:ns4="urn:core_2018_1.platform.webservices.netsuite.com"><%=account %></ns4:account>
-            <ns5:role internalId="<%=role %>" xmlns:ns5="urn:core_2018_1.platform.webservices.netsuite.com"/>
+            <ns2:token xmlns:ns2="urn:core_2018_1.platform.webservices.netsuite.com"><%=token%></ns2:token>
+            <ns3:consumerKey xmlns:ns3="urn:core_2018_1.platform.webservices.netsuite.com"><%=consumerKey%></ns3:consumerKey>
+            <ns4:nonce xmlns:ns4="urn:core_2018_1.platform.webservices.netsuite.com"><%=nonce %></ns4:nonce>
+            <ns4:account xmlns:ns5="urn:core_2018_1.platform.webservices.netsuite.com"><%=account %></ns5:account>
+            <ns4:timestamp xmlns:ns6="urn:core_2018_1.platform.webservices.netsuite.com"><%=timestamp %></ns6:timestamp>
+            <ns4:signature soap:algorithm="HMAC-SHA256" xmlns:ns7="urn:core_2018_1.platform.webservices.netsuite.com"><%=signature %></ns7:signature>
         </ns1:passport>
     </soap:Header>
     <soap:Body>
