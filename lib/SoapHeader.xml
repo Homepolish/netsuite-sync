@@ -13,9 +13,9 @@
             <ns2:token xmlns:ns2="urn:core_2018_1.platform.webservices.netsuite.com"><%=token%></ns2:token>
             <ns3:consumerKey xmlns:ns3="urn:core_2018_1.platform.webservices.netsuite.com"><%=consumerKey%></ns3:consumerKey>
             <ns4:nonce xmlns:ns4="urn:core_2018_1.platform.webservices.netsuite.com"><%=nonce %></ns4:nonce>
-            <ns4:account xmlns:ns5="urn:core_2018_1.platform.webservices.netsuite.com"><%=account %></ns5:account>
-            <ns4:timestamp xmlns:ns6="urn:core_2018_1.platform.webservices.netsuite.com"><%=timestamp %></ns6:timestamp>
-            <ns4:signature soap:algorithm="HMAC-SHA256" xmlns:ns7="urn:core_2018_1.platform.webservices.netsuite.com"><%=signature %></ns7:signature>
+            <ns5:account xmlns:ns5="urn:core_2018_1.platform.webservices.netsuite.com"><%=account %></ns5:account>
+            <ns6:timestamp xmlns:ns6="urn:core_2018_1.platform.webservices.netsuite.com"><%=timestamp %></ns6:timestamp>
+            <ns7:signature soap:algorithm="HMAC-SHA256" xmlns:ns7="urn:core_2018_1.platform.webservices.netsuite.com"><%=signature %></ns7:signature>
         </ns1:passport>
     </soap:Header>
     <soap:Body>
