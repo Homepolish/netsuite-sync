@@ -5,6 +5,9 @@
                xmlns:platformCore="urn:core_2018_1.platform.webservices.netsuite.com"
                xmlns:platformFaults="urn:faults_2018_1.platform.webservices.netsuite.com">
     <soap:Header>
+        <ns1:applicationInfo xmlns:ns1="urn:messages_2018_1.platform.webservices.netsuite.com">
+            <applicationId>1B99D675-7E7A-4DA5-9610-04D229E10AB8</applicationId>
+        </ns1:applicationInfo>
         <ns1:passport soap:actor="http://schemas.xmlsoap.org/soap/actor/next" soap:mustUnderstand="0"
                       xmlns:ns1="urn:messages_2018_1.platform.webservices.netsuite.com">
             <ns2:email xmlns:ns2="urn:core_2018_1.platform.webservices.netsuite.com"><%=email%></ns2:email>
