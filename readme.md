@@ -116,7 +116,7 @@ To just spew debug messages to the console, define an environment variable befor
 ##### XML files
 XML files under `/lib` named \<operation\>Template.xml are SOAP snippets representing the NetSuite web service _operation_
 
-For example, _getTemplate.xml_ is the **get** operation as described in the NetSuite [wsdl](https://webservices.netsuite.com/wsdl/v2014_2_0/netsuite.wsdl).
+For example, _getTemplate.xml_ is the **get** operation as described in the NetSuite [wsdl](https://webservices.netsuite.com/wsdl/v2018_1_0/netsuite.wsdl).
 
 
 
