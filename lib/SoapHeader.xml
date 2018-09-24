@@ -16,7 +16,7 @@
             <ns5:account xmlns:ns5="urn:core_2018_1.platform.webservices.netsuite.com"><%=account %></ns5:account>
             <ns6:timestamp xmlns:ns6="urn:core_2018_1.platform.webservices.netsuite.com"><%=timestamp %></ns6:timestamp>
             <ns7:signature soap:algorithm="HMAC-SHA256" xmlns:ns7="urn:core_2018_1.platform.webservices.netsuite.com"><%=signature %></ns7:signature>
-        </ns1:passport>
+        </ns1:tokenPassport>
     </soap:Header>
     <soap:Body>
         <%=soapBody%>
