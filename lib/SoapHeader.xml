@@ -5,18 +5,14 @@
                xmlns:platformCore="urn:core_2018_1.platform.webservices.netsuite.com"
                xmlns:platformFaults="urn:faults_2018_1.platform.webservices.netsuite.com">
     <soap:Header>
-        <ns1:applicationInfo xmlns:ns1="urn:messages_2018_1.platform.webservices.netsuite.com">
-            <applicationId>1B99D675-7E7A-4DA5-9610-04D229E10AB8</applicationId>
-        </ns1:applicationInfo>
-        <ns1:tokenPassport soap:actor="http://schemas.xmlsoap.org/soap/actor/next" soap:mustUnderstand="0"
-                      xmlns:ns1="urn:messages_2018_1.platform.webservices.netsuite.com">
-            <ns2:token xmlns:ns2="urn:core_2018_1.platform.webservices.netsuite.com"><%=token%></ns2:token>
-            <ns3:consumerKey xmlns:ns3="urn:core_2018_1.platform.webservices.netsuite.com"><%=consumerKey%></ns3:consumerKey>
-            <ns4:nonce xmlns:ns4="urn:core_2018_1.platform.webservices.netsuite.com"><%=nonce %></ns4:nonce>
-            <ns5:account xmlns:ns5="urn:core_2018_1.platform.webservices.netsuite.com"><%=account %></ns5:account>
-            <ns6:timestamp xmlns:ns6="urn:core_2018_1.platform.webservices.netsuite.com"><%=timestamp %></ns6:timestamp>
-            <ns7:signature soap:algorithm="HMAC-SHA256" xmlns:ns7="urn:core_2018_1.platform.webservices.netsuite.com"><%=signature %></ns7:signature>
-        </ns1:tokenPassport>
+        <platformMsgs:tokenPassport>
+            <platformMsgs:token><%=token%></platformMsgs:token>
+            <platformMsgs:consumerKey><%=consumerKey%></platformMsgs:consumerKey>
+            <platformMsgs:nonce><%=nonce %></platformMsgs:nonce>
+            <platformMsgs:account><%=account %></platformMsgs:account>
+            <platformMsgs:timestamp><%=timestamp %></platformMsgs:timestamp>
+            <platformMsgs:signature algorithm="HMAC-SHA256"><%=signature %></platformMsgs:signature>
+        </platformMsgs:tokenPassport>
     </soap:Header>
     <soap:Body>
         <%=soapBody%>
